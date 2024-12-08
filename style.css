@@ -1,0 +1,144 @@
+:root{
+/* primary */
+--Orange: hsl(25, 97%, 53%);
+
+/* ### Neutral */
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 16%);
+--Numbers-Dark-Blue: hsl(213, 19%, 22%);
+--Star-Dark-Blue: hsl(213, 19%, 20%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+img, svg{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--Very-Dark-Blue);
+    font-size: 1rem;
+    color: var(--White);
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.rating-component-wrapper{
+    width: 100%;
+    max-width: 400px;
+}
+.rating-card,
+.thank-you-card{
+    background-color: var(--Dark-Blue);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.star-img{
+    background-color: var(--Star-Dark-Blue);
+    padding: 0.6rem;
+    border-radius: 50%;
+}
+.rating-text{
+    margin-top: 1.8rem;
+}
+.heading{
+    color: var(--White);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+.text{
+    color: var(--Light-Grey);
+}
+.rates{
+    margin: 1.6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rates li{
+    cursor: pointer;
+    background-color: var(--Numbers-Dark-Blue);
+    padding: 0.8rem 1.2rem;
+    border-radius: 50%;
+}
+.active{
+    background-color: var(--White) !important;
+    color: var(--Very-Dark-Blue);
+}
+.rates li:hover{
+    background-color: var(--Orange);
+}
+.submit-btn{
+    cursor: pointer;
+    background-color: var(--Orange);
+    width: 100%;
+    border: none;
+    padding: 0.6rem 0;
+    text-transform: uppercase;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    border-radius: 100vmax;
+}
+.submit-btn:hover{
+    background-color: var(--White);
+}
+
+/* thank you card */
+.thank-you-card{
+    display: none;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+.thank-you-img{
+    margin: 0 auto;
+}
+.result{
+    display: inline-block;
+    margin: 2rem 0;
+    color: var(--Orange);
+    background-color: var(--Star-Dark-Blue);
+    padding: 0.5rem 1.2rem;
+    border-radius: 100vmax;
+    font-weight: 500;
+}
+
+.back-btn{
+    background-color: var(--Orange);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    color: var();
+    border-radius: 100vmax;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+.attribution{
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--Light-Grey);
+}
+.attribution a{
+    color:var(--Orange);
+}
