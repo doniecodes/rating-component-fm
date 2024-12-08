@@ -142,3 +142,9 @@ body{
 .attribution a{
     color:var(--Orange);
 }
+
+@media (max-width: 600px){
+    .container{
+        width: 90%;
+    }
+}

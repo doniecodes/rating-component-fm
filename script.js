@@ -49,4 +49,3 @@ let previousPage = ()=>{
         resetRates();
     })
 }
-
